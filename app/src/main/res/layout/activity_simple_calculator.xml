@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/graphite"
+    android:orientation="vertical"
+    tools:context=".ScientificCalculator">
+
+    <TextView
+        style="@style/output"
+        android:id="@+id/outputView"/>
+
+    <LinearLayout style="@style/buttonRow">
+        <Button
+            style="@style/functionalButton"
+            android:onClick="deleteLastDigit"
+            android:textColor="#FFFFFF"
+            android:text="⌫" />
+
+        <Button
+            style="@style/functionalButton"
+            android:onClick="clearAllOperations"
+            android:textColor="#FFFFFF"
+            android:id="@+id/clearButton" />
+
+        <Button
+            style="@style/functionalButton"
+            android:onClick="changeNumberSign"
+            android:textColor="#FFFFFF"
+            android:text="+/-" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/buttonRow">
+
+        <Button
+            style="@style/numberButton"
+            android:text="7" />
+
+        <Button
+            style="@style/numberButton"
+            android:text="8" />
+
+        <Button
+            style="@style/numberButton"
+            android:text="9" />
+
+        <Button
+            style="@style/functionalButton"
+            android:onClick="selectOperation"
+            android:textColor="#FFFFFF"
+            android:text="/" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/buttonRow">
+
+        <Button
+            style="@style/numberButton"
+            android:text="4" />
+
+        <Button
+            style="@style/numberButton"
+            android:text="5" />
+
+        <Button
+            style="@style/numberButton"
+            android:text="6" />
+
+        <Button
+            style="@style/functionalButton"
+            android:onClick="selectOperation"
+            android:textColor="#FFFFFF"
+            android:text="*" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/buttonRow">
+
+        <Button
+            style="@style/numberButton"
+            android:text="1" />
+
+        <Button
+            style="@style/numberButton"
+            android:text="2" />
+
+        <Button
+            style="@style/numberButton"
+            android:text="3" />
+
+        <Button
+            style="@style/functionalButton"
+            android:onClick="selectOperation"
+            android:textColor="#FFFFFF"
+            android:text="-" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/buttonRow">
+
+        <Button
+            style="@style/numberButton"
+            android:text="0" />
+
+        <Button
+            style="@style/numberButton"
+            android:text="." />
+
+        <Button
+            style="@style/numberButton"
+            android:text="="
+            android:onClick="equalsAction"/>
+
+        <Button
+            style="@style/functionalButton"
+            android:onClick="selectOperation"
+            android:textColor="#FFFFFF"
+            android:text="+" />
+    </LinearLayout>
+
+
+</LinearLayout>
